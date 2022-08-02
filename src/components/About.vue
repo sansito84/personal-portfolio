@@ -3,11 +3,11 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-white mt-0">I've got what you need!</h2>
+                    <h2 class="text-white mt-0">Eśto es lo que tengo para ofrecer!</h2>
                     <hr class="divider divider-light" />
-                    <p class="text-white-75 mb-4">I got auto-acnowledge about front-end developing!  </p>
-                    <div class="row">
-                    <ul class="col list-group">
+                    <p class="text-white-75 mb-4">Mis conocimientos autodidactas!  </p>
+                    <div class="row shadow p-3 bg-body rounded-3 ">
+                    <ul class="col list-group ">
                         <li class="list-group-item">
                             <h3>HTML <i class="fa-brands fa-html5" style="font-size:2rem; color: cornflowerblue"></i></h3>
                             <div class="progress">
@@ -33,7 +33,7 @@
                             </div>
                         </li>
                     </ul>     
-                    <ul class="col list-group">
+                    <ul class="col list-group ">
                         <li class="list-group-item">
                             <h3>VueJS <i class="fa-brands fa-vuejs" style="font-size:2rem; color: cornflowerblue"></i></h3>
                             <div class="progress">
@@ -60,7 +60,7 @@
                             </div>
                         </li>
                     </ul>
-                    <ul class="col list-group">
+                    <ul class="col list-group ">
                         <li class="list-group-item">
                             <h3>Photoshop <i class="fa-solid fa-image" style="font-size:2rem; color: cornflowerblue"></i></h3>                            
                             <div class="progress">

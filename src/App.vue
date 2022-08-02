@@ -7,10 +7,10 @@
         <About></About>
         <!-- Services-->
         <Services></Services>
-        <!-- Email -->
-        <Email></Email>
         <!-- Contact-->
         <Contact></Contact>
+        <!-- Email -->
+        <Email></Email>
         <!-- Footer-->
         <Footer></Footer>  
  

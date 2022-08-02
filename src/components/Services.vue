@@ -1,14 +1,15 @@
 <template>
     <section class="page-section" id="services" >
         <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0">At Your Service</h2>
+            <h2 class="text-center mt-0">Portfolio</h2>
             <hr class="divider"/>
             <div class="row">
                 <div class="row text-center">
-                    <div class="col mb-2 mt-4" v-for="(obj, key) in servicesJSON" :key="key">
-                        <div class="mb-4"><img style="height: 150px" :src="'./'+ obj.img +'.jpg'" :alt="obj.caption"/></div>
-                        <h3 class="h4 mb-4">{{ obj.header }}</h3>                        
-                        <h6 class="mb-0">{{ obj.caption }}</h6>
+                    <div class="col-3 mb-2 mt-4 shadow p-3 rounded-3" v-for="(obj, key) in servicesJSON" :key="key">
+                        <div class="mb-4"><img style="height: 100px" :src="'./'+ obj.img +'.png'" :alt="obj.caption"/></div>
+                        <h3 class="h4 mb-4">Cliente: {{ obj.header }}</h3>                        
+                        <h6 class="mb-2">{{ obj.caption }}</h6>
+                        <h6 class="mb-0 font-monospace">{{ obj.description }}</h6>
                     </div>
                 </div>
             </div>
@@ -21,25 +22,28 @@ export default {
     data: () => ({
         servicesJSON:[
             {
-                img: 'jake',
-                caption: 'Tasson',
-                header:'Yah',
-
+                img: 'boca',
+                caption: 'Prototipo "Página web de Boca"',
+                header:'Covery',
+                description:'HTML, CSS'
             },
             {
-                img: 'ayo',
-                caption: 'Teake',
-                header:'Golo',
+                img: 'boston',
+                caption: 'Prototipo "Página web de Boston"',
+                header:'Covery',
+                description:'HTML, CSS'
             },
             {
-                img: 'jimmy',
-                caption: 'Flash',
-                header:'Taution',
+                img: 'libra',
+                caption: 'Prototipo "Página web de Libra"',
+                header:'Covery',
+                description:'VUE, Bootstrap'
             },
             {
-                img: 'jimmy',
-                caption: 'Flash',
-                header:'Taution',
+                img: 'aeropuertos',
+                caption: 'Prototipo "Página web de Aeropuertos Argentina"',
+                header:'Covery',
+                description:'HTML, Bootstrap'
             }
         ]
     })
