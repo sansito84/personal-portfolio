@@ -31,7 +31,8 @@ import Email from './components/Email.vue'
 
 export default {
   components: { NavBar, Header, About, Services, EmailVue, Contact, Footer, Email },
-  name: 'App'  
+  name: 'App' 
+   
 }
 
 </script>

@@ -7841,7 +7841,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #f5f5f5 !important;
 }
 
 .bg-dark {
@@ -11476,3 +11476,4 @@ header.masthead h1, header.masthead .h1 {
 .zoom:hover{
   scale: 3;
 }
+

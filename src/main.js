@@ -5,3 +5,4 @@ import './assets/css/styles.css'
 
 
 createApp(App).mount('#app')
+
