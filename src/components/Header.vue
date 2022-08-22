@@ -9,6 +9,8 @@
                 </div>
                 <div class="col-lg-8 align-self-baseline">
                     <p class="text-white-75 mb-5">Desarrollador Front-End camino a Full-Stack </p>
+                    <p class="text-white-75 mb-5">IT Lead - Front-end developer en <a class="text-white-50 mb-5" href="https://covery.tech" target="_blank">Covery Tech</a></p>
+                        
                     <a class="btn btn-primary btn-xl" href="#about">Conoceme más!</a>
                 </div>
             </div>

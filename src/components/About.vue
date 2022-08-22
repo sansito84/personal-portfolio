@@ -3,9 +3,9 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-12 text-center">
-                    <h2 class="text-white mt-0">Eśto es lo que tengo para ofrecer!</h2>
+                    <h2 class="text-white mt-0">Skills!</h2>
                     <hr class="divider divider-light" />
-                    <p class="text-white-75 mb-4">Mis conocimientos autodidactas!  </p>
+                    <p class="text-white-75 mb-4">  </p>
                     <div class="row shadow p-3 bg-body rounded-3 ">
                       <ul class="col list-group ">
                         <li class="list-group-item">
@@ -91,9 +91,7 @@
                             </div>
                         </li>
                       </ul>
-                    </div>
-                      <hr class="divider divider-light" />
-                    <a class="btn btn-light btn-xl" href="#services">Portfolio</a>
+                    </div>                      
                 </div>
             </div>
         </div>
