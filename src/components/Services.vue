@@ -1,5 +1,4 @@
-<template>
-    
+<template>    
     <section class="page-section" id="services" >
         <div class="container px-4 px-lg-5">
             <h2 class="text-center mt-0">Portfolio</h2>
@@ -7,7 +6,7 @@
                     <swiper
                         class="shadow-lg rounded-3"
                         :modules="modules"
-                        :slides-per-view="3"
+                        :slides-per-view="1"
                         :space-between="50"
                         navigation
                         :pagination="{ clickable: true }"                        
@@ -15,13 +14,13 @@
                         @slideChange="onSlideChange"
                     >
                         <swiper-slide v-for="(obj, key) in servicesJSON" :key="key">
-                        <div class="row">
+                        <div class="">
                             <a class="btn btn-primary" href="" style="">
-                            <div class="col-12 mt-4 rounded">
-                                <div class="mb-4"><img class="services-img rounded" style="height: 100px" :src="'./'+ obj.img +'.png'" :alt="obj.caption"/></div>
+                            <div class="mt-4 rounded">
+                                <div class="mb-4"><img class="services-img rounded" style="height: 200px" :src="'./'+ obj.img +'.png'" :alt="obj.caption"/></div>
                                 <h3 class="h4 mb-4">Cliente: {{ obj.header }}</h3>                        
                                 <h6 class="mb-2">{{ obj.caption }}</h6>
-                                <h6 class="mb-0 font-monospace">{{ obj.description }}</h6>
+                                <h6 class="mb-4 font-monospace">{{ obj.description }}</h6>
                             </div>
                             </a>
                         </div>

@@ -1,0 +1,59 @@
+@media (min-width: 992px) {
+    #mainNav {
+      box-shadow: none;
+      background-color: transparent;
+    }
+    #mainNav .navbar-brand {
+      color:rgba(100, 100, 100, 1);
+      text-shadow: -0.25px -0.25px 0 #000, 0.25px -0.25px 0 #000, -0.25px 0.25px 0 #000, 0.25px 0.25px 0 #000;
+    }
+    #mainNav .navbar-brand:hover {
+      color:rgba(0, 0, 0, 1);
+      text-shadow: -0.25px -0.25px 0 #000, 0.25px -0.25px 0 #000, -0.25px 0.25px 0 #000, 0.25px 0.25px 0 #000;
+      }
+    #mainNav .navbar-nav .nav-item .nav-link {
+        @function color-texto($color) {
+            @if (lightness($color) > 50) {
+              @return black;
+            } @else {
+              @return white;
+            }
+          }
+          
+          $colors: black, white, blue, red, green, yellow, orange;
+          
+          @each $color in $colors {
+            .btn-#{$color} {
+              background: $color;
+              padding: 10px 30px;
+              display: inline-block;
+              text-transform: uppercase;
+              text-decoration: none;
+              color: color-texto($color);
+            }
+          }
+    }
+    #mainNav .navbar-nav .nav-item .nav-link:hover {
+      color:rgba(0, 0, 0, 1);
+      text-shadow: -0.25px -0.25px 0 #000, 0.25px -0.25px 0 #000, -0.25px 0.25px 0 #000, 0.25px 0.25px 0 #000;
+    }
+    #mainNav .navbar-nav .nav-item:last-child .nav-link {
+      padding-right: 0;
+    }
+    #mainNav.navbar-shrink {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      background-color: #fff;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+      color: #212529;
+    }
+    #mainNav.navbar-shrink .navbar-brand:hover {
+      color: #f4623a;
+    }
+    #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+      color: #212529;
+    }
+    #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+      color: #f4623a;
+    }
+  }
