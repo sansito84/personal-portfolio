@@ -11298,6 +11298,7 @@ textarea.form-control-lg {
 html {
   height: 100%;
   scroll-padding-top: calc(4.5rem - 1px);
+  overflow-x: hidden;
 }
 
 body {
@@ -11413,12 +11414,13 @@ header.masthead h1, header.masthead .h1 {
 
 video {
   position: absolute;
-  left: 0;
+  left: -10px;
   top: 0;
   width: 150%;
   height: fit-content;
   z-index: -1;
   filter: grayscale() blur(5px) ;
+  
 }
 
 @media (max-width: 992px) {
