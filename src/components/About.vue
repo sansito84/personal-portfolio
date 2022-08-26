@@ -49,7 +49,7 @@
                             <h3>Python <i class="fa-brands fa-python" style="font-size:2rem; color: cornflowerblue"></i></h3>
                             <h5>Intermedio</h5>
                             <div class="progress">
-                              <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                              <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
                             </div>
                         </li>
                         <li class="list-group-item">

@@ -6,7 +6,7 @@
                     <swiper
                         class="shadow-lg rounded-3"
                         :modules="modules"
-                        :slides-per-view="2"
+                        :slides-per-view="1"
                         :space-between="50"
                         navigation
                         :pagination="{ clickable: true }"                        

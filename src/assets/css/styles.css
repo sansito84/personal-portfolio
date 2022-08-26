@@ -7812,7 +7812,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: .1;
-  background: linear-gradient(to top, #6610f2 0%, rgba(121,9,63,1) 50%, rgba(0,212,255,1) 100%) !important;
+  background: linear-gradient(to top, #6610f2 0%, rgba(121,9,63,1) 25%, rgba(0,0,0,1) 100%) !important;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11365,11 +11365,9 @@ hr.divider-light {
   }
   #mainNav .navbar-brand {
     color:gray;
-    /* text-shadow: -0.25px -0.25px 0 #000, 0.25px -0.25px 0 #000, -0.25px 0.25px 0 #000, 0.25px 0.25px 0 #000; */
   }
   #mainNav .navbar-brand:hover {
     color:rgba(100, 100, 100, 1);
-    /* text-shadow: -0.25px -0.25px 0 #000, 0.25px -0.25px 0 #000, -0.25px 0.25px 0 #000, 0.25px 0.25px 0 #000; */
     }
   #mainNav .navbar-nav .nav-item .nav-link {
     color:rgba(100, 100, 100, 1);
@@ -11401,9 +11399,7 @@ hr.divider-light {
 
 header.masthead {
   padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(2,0,36,1) 0%, rgba(121,9,63,1) 50%, rgba(0,212,255,1) 100%);
-  
+  padding-bottom: calc(10rem - 4.5rem);  
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11411,7 +11407,32 @@ header.masthead {
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
+  text-shadow: 0 0 20px #fff;
+  z-index: 1;
 }
+
+video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150%;
+  height: fit-content;
+  z-index: -1;
+  filter: grayscale() blur(5px) ;
+}
+
+@media (max-width: 992px) {
+  video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 150%;
+    width: auto;
+    z-index: -1;
+    filter: grayscale() blur(5px) ;
+  }
+}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -11425,6 +11446,7 @@ header.masthead h1, header.masthead .h1 {
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
   }
+
 }
 @media (min-width: 1200px) {
   header.masthead h1, header.masthead .h1 {
