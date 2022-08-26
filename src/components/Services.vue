@@ -15,7 +15,7 @@
                     >
                         <swiper-slide v-for="(obj, key) in servicesJSON" :key="key">
                         <div class="">
-                            <a class="btn btn-primary" href="" style="">
+                            <a class="btn btn-primary my-3" href="" style="">
                             <div class="mt-4 rounded">
                                 <div class="mb-4"><img class="services-img rounded" style="height: 200px" :src="'./'+ obj.img +'.jpg'" :alt="obj.caption"/></div>
                                 <h3 class="h4 mb-4">Cliente: {{ obj.header }}</h3>                        
