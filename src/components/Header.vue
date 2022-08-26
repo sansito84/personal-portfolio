@@ -21,7 +21,7 @@
         </div>
         <div class="col-lg-8 align-self-baseline">
           <p class="text-white mb-2">
-            Mi nombre es Santiago Sito
+            Mi nombre es <h4 class="text-white">Santiago Sito</h4>
           </p>
           <p class="text-white-75 mb-2">
             Desarrollador Front-End camino a Full-Stack
