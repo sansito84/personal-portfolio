@@ -20,7 +20,7 @@
                     </div>
                     <!-- Message input-->
                     <div class="form-floating mb-3">
-                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required" name="message"></textarea>
+                        <textarea class="form-control form-control-lg" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem; min-height: 5rem;" data-sb-validations="required" name="message"></textarea>
                         <label for="message">Mensaje</label>
                         <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                     </div>                  
