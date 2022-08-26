@@ -87,6 +87,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  max-width: 100vw;
 }
 
 hr {
@@ -262,7 +263,7 @@ pre {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  overflow: auto;
+  overflow-y: auto;
   font-size: 0.875em;
 }
 pre code {
@@ -2088,7 +2089,7 @@ progress {
 .table-danger {
   --bs-table-bg: #f8d7da;
   --bs-table-striped-bg: #eccccf;
-  --bs-table-striped-color: #000;
+  --bs-table-striped-color: hidden#000;
   --bs-table-active-bg: #dfc2c4;
   --bs-table-active-color: #000;
   --bs-table-hover-bg: #e5c7ca;
@@ -2128,31 +2129,32 @@ progress {
 
 @media (max-width: 575.98px) {
   .table-responsive-sm {
-    overflow-x: auto;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
   }
 }
 @media (max-width: 767.98px) {
   .table-responsive-md {
-    overflow-x: auto;
+    overflow-x: hidden;
+    -webkit-overflow-x-scrolling: hidden ;
     -webkit-overflow-scrolling: touch;
   }
 }
 @media (max-width: 991.98px) {
   .table-responsive-lg {
-    overflow-x: auto;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
   }
 }
 @media (max-width: 1199.98px) {
   .table-responsive-xl {
-    overflow-x: auto;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
   }
 }
 @media (max-width: 1399.98px) {
   .table-responsive-xxl {
-    overflow-x: auto;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
   }
 }
@@ -4141,7 +4143,7 @@ textarea.form-control-lg {
     padding-left: 0.5rem;
   }
   .navbar-expand-sm .navbar-nav-scroll {
-    overflow: visible;
+    overflow-y: visible;
   }
   .navbar-expand-sm .navbar-collapse {
     display: flex !important;
@@ -4194,7 +4196,7 @@ textarea.form-control-lg {
     padding-left: 0.5rem;
   }
   .navbar-expand-md .navbar-nav-scroll {
-    overflow: visible;
+    overflow-y: visible;
   }
   .navbar-expand-md .navbar-collapse {
     display: flex !important;
@@ -4247,7 +4249,7 @@ textarea.form-control-lg {
     padding-left: 0.5rem;
   }
   .navbar-expand-lg .navbar-nav-scroll {
-    overflow: visible;
+    overflow-y: visible;
   }
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
@@ -4300,7 +4302,7 @@ textarea.form-control-lg {
     padding-left: 0.5rem;
   }
   .navbar-expand-xl .navbar-nav-scroll {
-    overflow: visible;
+    overflow-y: visible;
   }
   .navbar-expand-xl .navbar-collapse {
     display: flex !important;
@@ -4353,7 +4355,7 @@ textarea.form-control-lg {
     padding-left: 0.5rem;
   }
   .navbar-expand-xxl .navbar-nav-scroll {
-    overflow: visible;
+    overflow-y: visible;
   }
   .navbar-expand-xxl .navbar-collapse {
     display: flex !important;
@@ -4405,7 +4407,7 @@ textarea.form-control-lg {
   padding-left: 0.5rem;
 }
 .navbar-expand .navbar-nav-scroll {
-  overflow: visible;
+  overflow-y: visible;
 }
 .navbar-expand .navbar-collapse {
   display: flex !important;
@@ -11297,6 +11299,7 @@ textarea.form-control-lg {
 }
 html {
   height: 100%;
+  width: 100vw;
   scroll-padding-top: calc(4.5rem - 1px);
   overflow-x: hidden;
 }
@@ -11402,9 +11405,9 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);  
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-repeat: repeat;
   background-size: cover;
+  background-color: #000;
 }
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
@@ -11412,12 +11415,13 @@ header.masthead h1, header.masthead .h1 {
   z-index: 1;
 }
 
-video {
+/* video {
+  overflow: hidden;
   position: absolute;
   left: -10px;
   top: 0;
-  width: 150%;
-  height: fit-content;
+  width: 100%;
+  height: auto;
   z-index: -1;
   filter: grayscale() blur(5px) ;
   
@@ -11425,15 +11429,16 @@ video {
 
 @media (max-width: 992px) {
   video {
+    overflow: hidden;
     position: absolute;
     left: -10px;
-    top: 0;
-    height: 150%;
+    top: -10px;
+    
     width: auto;
     z-index: -1;
     filter: grayscale() blur(5px) ;
   }
-}
+} */
 
 @media (min-width: 992px) {
   header.masthead {

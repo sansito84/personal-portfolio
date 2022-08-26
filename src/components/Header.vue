@@ -1,13 +1,16 @@
-<template>
+
+
+
+<template>  
   <header class="masthead">
     <div class="container px-4 px-lg-5 h-100">
-      <video
+      <!-- <video
         src="https://player.vimeo.com/external/368789132.hd.mp4?s=33600fce2f968c7b3778ec3439df7d655a6f7585&profile_id=172&oauth2_token_id=57447761"
         autoplay="true"
         muted="true"
         loop="true"
         poster=""
-      ></video>
+      ></video> -->
       <div
         class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center"
       >
@@ -21,7 +24,7 @@
         </div>
         <div class="col-lg-8 align-self-baseline">
           <p class="text-white mb-2">Mi nombre es</p>
-          <h4 class="text-white">Santiago Sito</h4>
+          <h4 class="text-white shadow-lg">Santiago Sito</h4>
           <p class="text-white-75 mb-2">
             Desarrollador Front-End camino a Full-Stack
           </p>
@@ -44,10 +47,13 @@
 
 <script>
 export default {
-  data: () => ({
-    image: "./ssdev.jpg",
-  }),
+    data: () => ({
+        image: "./ssdev.jpg",
+    }),
+
 };
 </script>
+
+
 
 <style lang="scss"></style>
