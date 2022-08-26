@@ -20,7 +20,10 @@
           <hr class="divider" />
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white-75 mb-5">
+          <p class="text-white mb-2">
+            Mi nombre es Santiago Sito
+          </p>
+          <p class="text-white-75 mb-2">
             Desarrollador Front-End camino a Full-Stack
           </p>
           <p class="text-white-75 mb-5">
