@@ -25,12 +25,11 @@ import Services from './components/Services.vue'
 import About from './components/About.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
-import EmailVue from './components/Email.vue'
 import Email from './components/Email.vue'
 
 
 export default {
-  components: { NavBar, Header, About, Services, EmailVue, Contact, Footer, Email },
+  components: { NavBar, Header, About, Services, Contact, Footer, Email },
   name: 'App' 
    
 }
