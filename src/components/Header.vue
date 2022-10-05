@@ -26,10 +26,10 @@
           <p class="text-white mb-2">Mi nombre es</p>
           <h4 class="text-white shadow-lg">Santiago Sito</h4>
           <p class="text-white-75 mb-2">
-            Desarrollador Front-End camino a Full-Stack
+            Front-End developer road to Full-Stack - Desarrollador Front-End camino a Full-Stack
           </p>
           <p class="text-white-75 mb-5">
-            IT Lead - Front-end developer en
+            IT Lead - Front-end developer at/en
             <a
               class="text-white-50 mb-5"
               href="https://covery.tech"

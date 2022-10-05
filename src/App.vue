@@ -3,10 +3,10 @@
         <NavBar></NavBar>
         <!-- Masthead-->
         <Header></Header>
-        <!-- About-->
-        <About></About>
-        <!-- Services-->
-        <Services></Services>
+        <!-- Skills-->
+        <Skills></Skills>
+        <!-- Portfolio-->
+        <Portfolio></Portfolio>
         <!-- Contact-->
         <Contact></Contact>
         <!-- Email -->
@@ -21,15 +21,16 @@
 
 import NavBar from './components/NavBar.vue'
 import Header from './components/Header.vue'
-import Services from './components/Services.vue'
-import About from './components/About.vue'
+import Portfolio from './components/Portfolio.vue'
+import Skills from './components/Skills.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 import Email from './components/Email.vue'
 
 
+
 export default {
-  components: { NavBar, Header, About, Services, Contact, Footer, Email },
+  components: { NavBar, Header, Skills, Contact, Footer, Email, Portfolio },
   name: 'App' 
    
 }
