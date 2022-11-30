@@ -53,6 +53,13 @@ import "swiper/css/zoom";
 export default {
   data: () => ({
     servicesJSON: [
+    {
+        img: "clima",
+        caption: 'Own Weather App',
+        header: "Weather App",
+        description: "HTML, CSS, JS and Bootstrap",
+        href: "https://weather.santiagosito.online",
+      },
       {
         img: "boca",
         caption: 'Prototipo operativo "Market Seguros de Boca"',
@@ -78,6 +85,14 @@ export default {
         img: "aeropuertos",
         caption:
           'Prototipo operativo "Market Seguros de Aeropuertos Argentina"',
+        header: "Covery",
+        description: "HTML, Bootstrap",
+        href: "http://covery.tech/",
+      },
+      {
+        img: "website-covery",
+        caption:
+          'Página corporativa de empresa',
         header: "Covery",
         description: "HTML, Bootstrap",
         href: "http://covery.tech/",
