@@ -1,5 +1,10 @@
-<template>  
+<template>
   <header class="masthead">
+    <div class="wrapper">
+      <div class="gradient gradient-1"></div>
+      <div class="gradient gradient-2"></div>
+      <div class="gradient gradient-3"></div>
+    </div>
     <div class="container px-4 px-lg-5 h-100">
       <!-- <video class="video"
         src="https://player.vimeo.com/external/368789132.hd.mp4?s=33600fce2f968c7b3778ec3439df7d655a6f7585&profile_id=172&oauth2_token_id=57447761"
@@ -14,21 +19,22 @@
         <div class="col-lg-8 align-self-end">
           <img
             class="img-fluid rounded-circle mb-4 border border-3 h-25 w-25"
-            :src="image"
+            :src="image"            
           />
           <h1>Sansito Dev</h1>
           <hr class="divider" />
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-white mb-2">Mi nombre es</p>
-          <h4 class="text-white shadow-lg">Santiago Sito</h4>
-          <p class="text-white-75 mb-2">
-            Front-End developer road to Full-Stack - Desarrollador Front-End camino a Full-Stack
+          <p class="text-black mb-2">My name is - Mi nombre es</p>
+          <h4 class="text-black">Santiago Sito</h4>
+          <p class="text-black-75 mb-2">
+            Front-End developer road to Full-Stack - Desarrollador Front-End
+            camino a Full-Stack
           </p>
-          <p class="text-white-75 mb-5">
+          <p class="text-black-75 mb-5">
             IT Lead - Front-end developer at/en
             <a
-              class="text-white-50 mb-5"
+              class="text-blue-50 mb-5"
               href="https://covery.tech"
               target="_blank"
               >Covery Tech</a
@@ -43,14 +49,11 @@
 </template>
 
 <script>
-export default {
+  export default {
     data: () => ({
-        image: "./ssdev.jpg",
+      image: "./ssdev.jpg",
     }),
-
-};
+  };
 </script>
-
-
 
 <style lang="scss"></style>
