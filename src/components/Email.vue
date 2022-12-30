@@ -40,9 +40,9 @@ export default {
     sendEmail() {
       emailjs.sendForm('service_d40930b', 'template_lsa01d2', this.$refs.form, 'Dq1CMCCIcOmQWpZf3')
         .then((result) => {
-            console.log('SUCCESS!', result.text);
+            alert('Message send!', result.text);
         }, (error) => {
-            console.log('FAILED...', error.text);
+            alert('FAILED...', error.text);
         });
     }
   }
