@@ -1,5 +1,5 @@
 <template>
-        <section class="page-section" id="contact">
+        <section class="page-section py-5" id="contact">
             <div class="container">
                 <h2 class="text-center">Contacto</h2>
                 <hr class="divider"/>

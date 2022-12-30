@@ -1,40 +1,34 @@
 <template>
-  <header class="masthead">
-    <div class="wrapper">
+  <header class="masthead bg-black h-100 py-5">
+
+    <div class="container h-100">
+      <div class="wrapper">
       <div class="gradient gradient-1"></div>
       <div class="gradient gradient-2"></div>
       <div class="gradient gradient-3"></div>
     </div>
-    <div class="container px-4 px-lg-5 h-100">
-      <!-- <video class="video"
-        src="https://player.vimeo.com/external/368789132.hd.mp4?s=33600fce2f968c7b3778ec3439df7d655a6f7585&profile_id=172&oauth2_token_id=57447761"
-        autoplay="true"
-        muted="true"
-        loop="true"
-        poster=""
-      ></video> -->
       <div
         class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center"
       >
         <div class="col-lg-8 align-self-end">
           <img
-            class="img-fluid rounded-circle mb-4 border border-3 h-25 w-25"
+            class="img-fluid rounded-circle mb-4 border border-3 h-25 w-25 shadow-xl"
             :src="image"            
           />
-          <h1>Sansito Dev</h1>
-          <hr class="divider" />
+          <h1 class="text-white">Sansito Dev</h1>
+          <hr class="divider text-white" />
         </div>
         <div class="col-lg-8 align-self-baseline">
-          <p class="text-black mb-2">My name is - Mi nombre es</p>
-          <h4 class="text-black">Santiago Sito</h4>
-          <p class="text-black-75 mb-2">
+          <p class="text-white mb-2">My name is - Mi nombre es</p>
+          <h4 class="text-white">Santiago Sito</h4>
+          <p class="text-white mb-2">
             Front-End developer road to Full-Stack - Desarrollador Front-End
             camino a Full-Stack
           </p>
-          <p class="text-black-75 mb-5">
+          <p class="text-white mb-5">
             IT Lead - Front-end developer at/en
             <a
-              class="text-blue-50 mb-5"
+              class="text-blue mb-5"
               href="https://covery.tech"
               target="_blank"
               >Covery Tech</a

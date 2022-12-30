@@ -1,8 +1,8 @@
 <template>
-  <section class="page-section" id="services">
-    <div class="container px-4 px-lg-5">
-      <h2 class="text-center mt-0">Portfolio</h2>
-      <hr class="divider" />
+  <section class="page-section bg-primary py-5" id="services">
+    <div class="container px-4 px-lg-5 text-center">
+      <h2 class="text-center text-white mt-0">Portfolio</h2>
+      
       <swiper
         class="shadow-lg rounded-5"
         :modules="modules"
