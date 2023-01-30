@@ -5,7 +5,7 @@
         <div class="col-lg-12 text-center">
           <h2 class="text-white mt-0">Skills!</h2>          
           <p class="text-white-75 mb-4"></p>
-          <div class="row shadow p-3 bg-body rounded-3 shadow-lg">
+          <div class="row shadow p-3 bg-body rounded-4 shadow-lg">
             <ul class="col list-group">
               <li class="list-group-item">
                 <h3>

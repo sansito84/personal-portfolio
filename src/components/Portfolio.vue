@@ -4,7 +4,7 @@
       <h2 class="text-center text-white mt-0">Portfolio</h2>
       
       <swiper
-        class="shadow-lg rounded-5"
+        class="shadow-lg bg-light rounded-4"
         :modules="modules"
         :slides-per-view="1"
         :space-between="50"
@@ -16,11 +16,11 @@
       >
         <swiper-slide v-for="(obj, key) in servicesJSON" :key="key">
           <div class="">
-            <a class="btn btn-primary mt-3 mb-5 rounded-4" v-bind:href="obj.href" target="_blank" style="">
+            <a class="btn btn-secondary mt-3 mb-5 rounded-3" v-bind:href="obj.href" target="_blank" style="">
               <div class="mt-4">
                 <div class="mb-4">
                   <img
-                    class="services-img rounded-4"
+                    class="services-img rounded-2"
                     style="height: 200px"
                     :src="'./' + obj.img + '.jpg'"
                     :alt="obj.caption"
