@@ -1,5 +1,5 @@
 <template>
-    <div class="container py-5 bg-white" id="email">
+    <div class="container py-5 bg-white text-dark rounded-5" id="email">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8 col-xl-6 text-center">
                 <h2 class="mt-0">Enviame un mensaje y lo responderé a la brevedad</h2>
