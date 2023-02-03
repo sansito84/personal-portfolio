@@ -1,12 +1,13 @@
 <template>
         <section class="page-section py-5" id="contact">
             <div class="container">
+
                 <h2 class="text-center">Contacto</h2>
                 <hr class="divider"/>
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-3 text-center mb-5 mb-lg-0" >
                         <a class="bi bi-telegram fs-2 mb-3 text-muted" href="https://t.me/SansitoDev" target="_blank" title="Enviar Telegram"></a>
-                        <div>+54 (3442) 453 430</div>
+                        <div>+54 9 (3442) 453 430</div>
                     </div>
                     <div class="col-lg-3 text-center mb-5 mb-lg-0">
                         <a class="bi bi-envelope fs-2 mb-3 text-muted" href="mailto:santiagosito@gmail.com" target="_blank" title="Enviar Email"></a>
@@ -21,6 +22,13 @@
                         <div>SanSito84</div>
                     </div>
                 </div>
+                <hr class="divider"/>
+                <div class="row gx-4 gx-lg-5 justify-content-center text-center">
+                    <div class="col col-12">
+                        <a class="btn btn-dark" href="cv.pdf" target="_blank">CV Download/Descarga mi curriculum</a>
+                    </div>
+                </div>
+                
             </div>            
         </section>
 </template>

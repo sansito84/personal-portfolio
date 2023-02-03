@@ -1,5 +1,6 @@
 <template>
     <div class="container py-5" id="email">
+
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8 col-xl-6 text-center">
                 <h2 class="mt-0">Enviame un mensaje y lo responderé a la brevedad</h2>
@@ -27,11 +28,6 @@
                     <!-- Submit Button-->
                     <div class="d-grid"><input class="btn btn-primary btn-xl" id="submitButton" type="submit" value="Enviar"></div>
                 </form>
-            </div>
-        </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center text-center">
-            <div class="col col-12">
-                <a class="btn btn-dark" href="cv.pdf" target="_blank">CV Download/Descarga mi curriculum</a>
             </div>
         </div>
     </div>    
