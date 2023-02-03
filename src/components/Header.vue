@@ -77,18 +77,18 @@
     background-size: cover;
     background-color: rgb(255, 255, 255);
     color: rgb(253, 253, 253);
-    z-index: 99;
+    z-index: 2;
   }
   header .masthead h1,
   header .masthead .h1 {
     font-size: 2.25rem;
     text-shadow: 0 0 20px rgb(255, 254, 254);
-    z-index: 100;
+    z-index: 2;
   }
   .masthead .container {
     padding-top: 3rem;
     position: relative;
-    z-index: 100;
+    z-index: 2;
     background-color: transparent;
     padding-bottom: 3rem;
   }
