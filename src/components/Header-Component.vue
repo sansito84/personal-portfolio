@@ -13,19 +13,19 @@
           <img
             class="img-fluid rounded-circle mb-4 border border-3 h-25 w-25 shadow-xl"
             :src="image"
-          />
-          <h1 class="text-white">Sansito Dev</h1>
+          />          
           <hr class="divider text-white" />
         </div>
         <div class="col-lg-8 align-self-baseline text-white">
           <p class=" mb-2">My name is - Mi nombre es</p>
           <h4 >Santiago Sito</h4>
           <p class="mb-2">
-            Front-End developer road to Full-Stack - Desarrollador Front-End
-            camino a Full-Stack
+            Experienced front-end and back-end developer proficient in deployment technologies like PM2, Nginx, and Ubuntu. Knowledgeable in Docker, Kubernetes, and CI/CD using GitHub Actions and Python. Strong problem-solving abilities and proven IT team leadership.
           </p>
+          <p class="mb-2">
+            Desarrollador experimentado en front-end y back-end, hábil en tecnologías de implementación como PM2, Nginx y Ubuntu. Conocimientos en Docker, Kubernetes y CI/CD con GitHub Actions y Python. Fuertes habilidades de resolución de problemas y liderazgo de equipos de IT comprobado.          </p>
           <p class="mb-5">
-            IT Lead - Front-end developer at/en
+            Former IT Lead - Front-end developer at/en
             <a class="mb-5" href="https://covery.tech" target="_blank"
               >Covery Tech</a
             >
@@ -41,7 +41,7 @@
 <script>
   export default {
     data: () => ({
-      image: "./ssdev.jpg",
+      image: "./ssdev.png",
     }),
   };
 </script>
