@@ -94,11 +94,11 @@
                     .then(
                         (result) => {
                             const toast = useToast();
-                            toast.success("Mensaje enviado! 🚀");
+                            toast.success("Sended message! / Mensaje enviado! 🚀");
                         },
                         (error) => {
                             const toast = useToast();
-                            toast.error("Error enviando mensaje 😬");
+                            toast.error("Error 😬");
                         }
                     );
             },

@@ -18,7 +18,7 @@
         </div>
         <div class="col-lg-8 align-self-baseline text-white">
           <p class=" mb-2">My name is - Mi nombre es</p>
-          <h4 >Santiago Sito</h4>
+          <h2 >Santiago Sito</h2>
           <p class="mb-2">
             Experienced front-end and back-end developer proficient in deployment technologies like PM2, Nginx, and Ubuntu. Knowledgeable in Docker, Kubernetes, and CI/CD using GitHub Actions and Python. Strong problem-solving abilities and proven IT team leadership.
           </p>
@@ -63,8 +63,8 @@
     header.masthead p {
       font-size: 1.15rem;
     }
-    header.masthead h1,
-    header.masthead .h1 {
+    header.masthead h2,
+    header.masthead .h2 {
       font-size: 3rem;
     }
   }
@@ -79,8 +79,8 @@
     color: rgb(253, 253, 253);
     z-index: 2;
   }
-  header .masthead h1,
-  header .masthead .h1 {
+  header .masthead h2,
+  header .masthead .h2 {
     font-size: 2.25rem;
     text-shadow: 0 0 20px rgb(255, 254, 254);
     z-index: 2;
