@@ -40,7 +40,6 @@
 </template>
 
 <script>
-//   Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation, Pagination, Scrollbar, A11y, Zoom } from "swiper";
 
@@ -58,7 +57,7 @@ export default {
         caption: 'Own Weather App',
         header: "Weather App",
         description: "HTML, CSS, JS and Bootstrap",
-        href: "https://weather.santiagosito.online",
+        href: "https://gleaming-crisp-e93335.netlify.app/",
       },
       {
         img: "boca",
@@ -96,6 +95,13 @@ export default {
         header: "Covery",
         description: "HTML, Bootstrap",
         href: "http://covery.tech/",
+      },
+      {
+        img: "scoreboard",
+        caption:
+          'Tablero de puntaje de hockey sobre patines',
+        header: "Freelance",
+        description: "react-native",
       },
     ],
   }),
