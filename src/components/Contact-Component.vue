@@ -24,8 +24,11 @@
                 </div>
                 <hr class="divider"/>
                 <div class="row gx-4 gx-lg-5 justify-content-center text-center">
-                    <div class="col col-12">
-                        <a class="btn btn-dark" href="cv.pdf" target="_blank">CV Download/Descarga mi curriculum</a>
+                    <div class="col col-4">
+                        <a class="btn btn-dark" href="cv.pdf" target="_blank">CV Download</a>
+                    </div>
+                    <div class="col col-4">
+                        <a class="btn btn-dark" href="cvs.pdf" target="_blank">Descarga mi curriculum</a>
                     </div>
                 </div>
                 

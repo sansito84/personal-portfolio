@@ -131,6 +131,26 @@
               </li>
               <li class="list-group-item">
                 <h3>
+                  React-native
+                  <i
+                    class="fa-brands fa-react"
+                    style="font-size: 2rem; color: cornflowerblue"
+                  ></i>
+                </h3>
+                <h5>Avanzado</h5>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 90%"
+                  ></div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <h3>
                   Python
                   <i
                     class="fa-brands fa-python"
@@ -150,6 +170,9 @@
                 </div>
               </li>
 
+
+            </ul>
+            <ul class="col list-group">
               <li class="list-group-item">
                 <h3>
                   Git
@@ -170,8 +193,6 @@
                   ></div>
                 </div>
               </li>
-            </ul>
-            <ul class="col list-group">
               <li class="list-group-item">
                 <h3>
                   Figma
@@ -232,26 +253,7 @@
                   ></div>
                 </div>
               </li>
-              <li class="list-group-item">
-                <h3>
-                  3DS
-                  <i
-                    class="fa-solid fa-cube"
-                    style="font-size: 2rem; color: cornflowerblue"
-                  ></i>
-                </h3>
-                <h5>Avanzado</h5>
-                <div class="progress">
-                  <div
-                    class="progress-bar progress-bar-striped"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    style="width: 90%"
-                  ></div>
-                </div>
-              </li>
+
             </ul>
           </div>
         </div>

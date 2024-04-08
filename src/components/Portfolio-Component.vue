@@ -60,6 +60,13 @@ export default {
         href: "https://gleaming-crisp-e93335.netlify.app/",
       },
       {
+        img: "scoreboard",
+        caption:
+          'Tablero de puntaje de hockey sobre patines',
+        header: "Freelance",
+        description: "react-native",
+      },
+      {
         img: "boca",
         caption: 'Prototipo operativo "Market Seguros de Boca"',
         header: "Covery",
@@ -95,13 +102,6 @@ export default {
         header: "Covery",
         description: "HTML, Bootstrap",
         href: "http://covery.tech/",
-      },
-      {
-        img: "scoreboard",
-        caption:
-          'Tablero de puntaje de hockey sobre patines',
-        header: "Freelance",
-        description: "react-native",
       },
     ],
   }),
