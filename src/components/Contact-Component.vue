@@ -2,7 +2,7 @@
         <section class="page-section py-5" id="contact">
             <div class="container">
 
-                <h2 class="text-center">Contact / Contacto</h2>
+                <h2 class="text-center animate__animated">Contact / Contacto</h2>
                 <hr class="divider"/>
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-3 text-center mb-5 mb-lg-0" >
@@ -36,6 +36,3 @@
         </section>
 </template>
 
-<style type="scss">
-
-</style>

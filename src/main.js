@@ -6,6 +6,8 @@ import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
+import 'animate.css';
+
 
 const app = createApp(App)
 const i18n = createI18n({
