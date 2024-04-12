@@ -1,5 +1,5 @@
 <template>
-    <div class="page-section" id="email">
+    <div class="page-section bg-white" id="email">
         <div class="container p-3 bg-secondary rounded-4 mb-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8 col-xl-6 text-center text-light">
