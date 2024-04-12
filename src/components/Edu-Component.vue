@@ -33,6 +33,9 @@ export default {
 </script>
 
 <style>
+.page-section{
+  color: black;
+}
 .course-item {
   padding: 15px;
   border-radius: 8px;
