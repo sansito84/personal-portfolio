@@ -36,9 +36,12 @@
         </section>
 </template>
 <style>
-.page-section-contact{
-    background-color: aliceblue;
-    color: black;
+
+#contact{
+    color: #000;
+}
+#email {
+    color: #000;
 }
 </style>
 
