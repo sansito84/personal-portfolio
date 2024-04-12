@@ -35,4 +35,10 @@
             </div>            
         </section>
 </template>
+<style>
+.page-section-contact{
+    background-color: aliceblue;
+    color: black;
+}
+</style>
 

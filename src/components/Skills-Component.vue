@@ -80,8 +80,5 @@
   .skill-item:hover {
     transform: scale(1.5);
   }
-  
-  .page-section {
-    background-color: aqua;
-  }
+
 </style>

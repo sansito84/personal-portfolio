@@ -57,9 +57,7 @@ export default {
 }
 
 
-.page-section {
-  background-color: #f8f9fa !important;
-}
+
 
 .page-section h2 {
   font-size: 2.5rem;

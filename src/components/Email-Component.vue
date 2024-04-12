@@ -1,5 +1,5 @@
 <template>
-    <div class="container p-5 bg-white text-dark rounded-5 mb-5" id="email">
+    <div class="page-sectio container p-5 bg-white text-dark rounded-5 mb-5" id="email">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8 col-xl-6 text-center">
                 <h2 class="mt-0">
