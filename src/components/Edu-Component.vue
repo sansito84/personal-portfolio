@@ -46,9 +46,6 @@ export default {
 .course-item:hover {
     transform: translateY(-5px) translateX(10px);
   }
-  
-template {
-  background-color: aqua;
-}
+
 </style>
 

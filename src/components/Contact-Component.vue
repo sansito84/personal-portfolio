@@ -1,5 +1,5 @@
 <template>
-        <section class="page-section py-5" id="contact">
+        <section class="page-section bg-white py-5" id="contact">
             <div class="container">
 
                 <h2 class="text-center animate__animated">Contact / Contacto</h2>
