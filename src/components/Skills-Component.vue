@@ -81,7 +81,7 @@
     transform: scale(1.5);
   }
   
-  template {
+  .page-section {
     background-color: aqua;
   }
 </style>
