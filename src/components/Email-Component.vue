@@ -13,7 +13,7 @@
                 </h4>
             </div>
         </div>
-        <div class="row justify-content-center mb-2">
+        <div class="row justify-content-center mb-2 text-dark">
             <div class="col-lg-6">
                 <form
                     class="page-section"
