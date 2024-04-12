@@ -37,6 +37,7 @@ export default {
 .course-item {
   padding: 15px;
   border-radius: 8px;
+  color: #000;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;

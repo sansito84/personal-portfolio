@@ -72,6 +72,7 @@
 .skill-item {
   padding: 15px;
   border-radius: 8px;
+  color:black;
   background-color: #ffffff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
