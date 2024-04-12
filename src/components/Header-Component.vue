@@ -71,7 +71,6 @@
     body {
         top: 0;
         color: #fff;
-        background-color: #000;
         padding: 0;
     }
     @media (min-width: 992px) {
