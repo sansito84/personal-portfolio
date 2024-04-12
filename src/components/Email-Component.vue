@@ -1,7 +1,8 @@
 <template>
-    <div class="page-section container p-5 bg-white rounded-5 mb-5" id="email">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6 text-center">
+    <div class="page-section" id="email">
+        <div class="container p-3 bg-secondary rounded-4 mb-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center text-light">
                 <h2 class="mt-0">
                     Send me a message and I will reply shortly / Enviame un
                     mensaje y lo responderé a la brevedad
@@ -74,6 +75,8 @@
                 </form>
             </div>
         </div>
+        </div>
+
     </div>
 </template>
 

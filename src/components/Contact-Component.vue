@@ -1,7 +1,6 @@
 <template>
         <section class="page-section bg-white py-5" id="contact">
-            <div class="container">
-
+            <div class="container text-dark">
                 <h2 class="text-center animate__animated">Contact / Contacto</h2>
                 <hr class="divider"/>
                 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -35,13 +34,5 @@
             </div>            
         </section>
 </template>
-<style>
 
-#contact{
-    color: #000;
-}
-#email {
-    color: #000;
-}
-</style>
 
