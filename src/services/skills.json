@@ -1,0 +1,104 @@
+[
+  {
+    "name": "HTML",
+    "icon": "skill-icons:html",
+    "level": "Advanced",
+    "progress": 90
+  },
+  {
+    "name": "CSS",
+    "icon": "skill-icons:css",
+    "level": "Advanced",
+    "progress": 90
+  },
+  {
+    "name": "Javascript",
+    "icon": "skill-icons:javascript",
+    "level": "Advanced",
+    "progress": 70
+  },
+  {
+    "name": "Bootstrap",
+    "icon": "skill-icons:bootstrap",
+    "level": "Advanced",
+    "progress": 90
+  },
+  {
+    "name": "VueJS",
+    "icon": "skill-icons:vuejs-light",
+    "level": "Advanced",
+    "progress": 80
+  },
+  {
+    "name": "ReactJS",
+    "icon": "skill-icons:react-light",
+    "level": "Advanced",
+    "progress": 65
+  },
+  {
+    "name": "React-native",
+    "icon": "skill-icons:react-light",
+    "level": "Advanced",
+    "progress": 90
+  },
+  {
+    "name": "Python",
+    "icon": "skill-icons:python-light",
+    "level": "Intermediate",
+    "progress": 55
+  },
+  {
+    "name": "Git",
+    "icon": "skill-icons:git",
+    "level": "Advanced",
+    "progress": 90
+  },
+  {
+    "name": "MySQL",
+    "icon": "skill-icons:mysql-light",
+    "level": "Advanced",
+    "progress": 85
+  },
+  {
+    "name": "Figma",
+    "icon": "skill-icons:figma-light",
+    "level": "Advanced",
+    "progress": 76
+  },
+  {
+    "name": "PM2",
+    "icon": "logos:pm2-icon",
+    "level": "Advanced",
+    "progress": 85
+  },
+  {
+    "name": "Nginx",
+    "icon": "skill-icons:nginx",
+    "level": "Advanced",
+    "progress": 76
+  },
+  {
+    "name": "Linux",
+    "icon": "skill-icons:linux-light",
+    "level": "Advanced",
+    "progress": 85
+  },
+  {
+    "name": "Docker",
+    "icon": "skill-icons:docker",
+    "level": "Intermediate",
+    "progress": 40
+  },
+  {
+    "name": "Kubernetes",
+    "icon": "skill-icons:kubernetes",
+    "level": "Intermediate",
+    "progress": 34
+  },
+  {
+    "name": "Github actions",
+    "icon": "skill-icons:githubactions-light",
+    "level": "Intermediate",
+    "progress": 25
+  }
+]

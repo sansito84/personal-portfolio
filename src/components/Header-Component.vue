@@ -22,7 +22,7 @@
                     <h2 class="animate__animated">Santiago Sito</h2>
                     <p class="mb-2">
                         Experienced front-end and back-end developer proficient
-                        in deployment technologies like PM2, Nginx, and Ubuntu.
+                        in deployment technologies like PM2, Nginx, and Linux.
                         Knowledgeable in Docker, Kubernetes, and CI/CD using
                         GitHub Actions and Python. Strong problem-solving
                         abilities and proven IT team leadership. Effective team
@@ -32,7 +32,7 @@
                     <p class="mb-2">
                         Desarrollador con experiencia en front-end y back-end,
                         hábil en implementaciones eficientes con PM2, Nginx y
-                        Ubuntu. Con conocimientos en Docker, Kubernetes y CI/CD
+                        Linux. Con conocimientos en Docker, Kubernetes y CI/CD
                         mediante GitHub Actions y Python. Fuerte en resolución
                         de problemas, liderazgo de equipos de IT y colaboración
                         efectiva en equipo.

@@ -7,6 +7,7 @@ import "vue-toastification/dist/index.css";
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 import 'animate.css';
+import { Icon } from '@iconify/vue';
 
 
 const app = createApp(App)
@@ -14,6 +15,8 @@ const i18n = createI18n({
     locale: 'es',
     // something vue-i18n options here ...
 })
+
+app.use(Icon)
 
 app.use(Toast, {
     transition: "Vue-Toastification__bounce",

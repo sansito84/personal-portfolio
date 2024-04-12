@@ -1,10 +1,9 @@
 <template>
   <section class="page-section bg-primary py-5" id="services">
-    <div class="container px-4 px-lg-5 text-center">
-      <h2 class="text-center text-white mt-0 mb-3 animate__animated">
+    <div class="container text-center">
+      <h2 class="text-center text-white my-5 animate__animated">
         Portfolio
       </h2>
-
       <swiper
         class="shadow-lg w-100 bg-light rounded-4"
         :modules="modules"
@@ -17,7 +16,7 @@
         :zoom="true"
       >
         <swiper-slide v-for="(obj, key) in servicesJSON" :key="key">
-          <div class="">
+          
             <a
               class="btn btn-secondary mt-3 mb-5 rounded-3"
               v-bind:href="obj.href"
@@ -40,7 +39,7 @@
                 </h6>
               </div>
             </a>
-          </div>
+          
         </swiper-slide>
         ...
       </swiper>

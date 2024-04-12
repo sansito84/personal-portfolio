@@ -11504,3 +11504,12 @@ body {
         transform: translateY(-50%) translateX(-50%) translateX(-15%) translateY(10%);
     }
 }
+
+.curtain-enter-active, .curtain-leave-active {
+    transition: height 0.5s ease;
+  }
+  
+.curtain-enter, .curtain-leave-to {
+    height: 0;
+}
+

@@ -1,260 +1,86 @@
 <template>
   <section class="page-section bg-primary py-5" id="about">
-    <div class="container px-4 px-lg-5 text-center">
-      <h2 class="text-white mt-0 mb-3 animate__animated">Skills!</h2>
-      <div class="row shadow p-3 bg-body rounded-4 shadow-lg">
-        <ul class="col list-group">
-          <li class="list-group-item">
-            <h3>
-              HTML
-              <i
-                class="fa-brands fa-html5"
-                style="font-size: 2rem; color: cornflowerblue"
-              ></i>
-            </h3>
-            <h5>Avanzado</h5>
+    <div class="container text-center">
+      <h2 class="text-white animate__animated my-5">Skills!</h2>
+      <div class="row bg-body rounded-4 shadow-lg gap-1">
+        <div v-for="(column, index) in columns" :key="index" class="col my-3">
+          <div
+            v-for="(skill, i) in column"
+            :key="i"
+            class="skill-item mx-2"            
+            
+          >
+            <div class="d-flex justify-content-center">
+              <h3>
+                {{ skill.name }}
+                <icon :icon="skill.icon" style="font-size: 2.5rem"></icon>
+              </h3>
+            </div>
+
+            <h5>{{ skill.level }}</h5>
             <div class="progress">
               <div
                 class="progress-bar progress-bar-striped"
                 role="progressbar"
-                style="width: 90%"
-                aria-valuenow="75"
+                :style="'width: ' + skill.progress + '%;'"
+                :aria-valuenow="skill.progress"
                 aria-valuemin="0"
                 aria-valuemax="100"
               ></div>
             </div>
-          </li>
-          <li class="list-group-item">
-            <h3>
-              CSS
-              <i
-                class="fa-brands fa-css3"
-                style="font-size: 2rem; color: cornflowerblue"
-              ></i>
-            </h3>
-            <h5>Avanzado</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped"
-                role="progressbar"
-                style="width: 90%"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <h3>
-              Javascript
-              <i
-                class="fa-brands fa-js"
-                style="font-size: 2rem; color: cornflowerblue"
-              ></i>
-            </h3>
-            <h5>Avanzado</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped"
-                role="progressbar"
-                style="width: 70%"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <h3>
-              Bootstrap
-              <i
-                class="fa-brands fa-bootstrap"
-                style="font-size: 2rem; color: cornflowerblue"
-              ></i>
-            </h3>
-            <h5>Avanzado</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped"
-                role="progressbar"
-                style="width: 90%"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </li>
-        </ul>
-        <ul class="col list-group">
-          <li class="list-group-item">
-            <h3>
-              VueJS
-              <i
-                class="fa-brands fa-vuejs"
-                style="font-size: 2rem; color: cornflowerblue"
-              ></i>
-            </h3>
-            <h5>Avanzado</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped"
-                role="progressbar"
-                style="width: 80%"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <h3>
-              ReactJS
-              <i
-                class="fa-brands fa-react"
-                style="font-size: 2rem; color: cornflowerblue"
-              ></i>
-            </h3>
-            <h5>Avanzado</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped"
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 65%"
-              ></div>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <h3>
-              React-native
-              <i
-                class="fa-brands fa-react"
-                style="font-size: 2rem; color: cornflowerblue"
-              ></i>
-            </h3>
-            <h5>Avanzado</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped"
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 90%"
-              ></div>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <h3>
-              Python
-              <i
-                class="fa-brands fa-python"
-                style="font-size: 2rem; color: cornflowerblue"
-              ></i>
-            </h3>
-            <h5>Intermedio</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped"
-                role="progressbar"
-                aria-valuenow="40"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 40%"
-              ></div>
-            </div>
-          </li>
-        </ul>
-        <ul class="col list-group">
-          <li class="list-group-item">
-            <h3>
-              Git
-              <i
-                class="fa-brands fa-git-alt"
-                style="font-size: 2rem; color: cornflowerblue"
-              ></i>
-            </h3>
-            <h5>Avanzado</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped"
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 90%"
-              ></div>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <h3>
-              Figma
-              <i
-                class="fa-brands fa-figma"
-                style="font-size: 2rem; color: cornflowerblue"
-              ></i>
-            </h3>
-            <h5>Avanzado</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped"
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 76%"
-              ></div>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <h3>
-              Photoshop
-              <i
-                class="fa-solid fa-image"
-                style="font-size: 2rem; color: cornflowerblue"
-              ></i>
-            </h3>
-            <h5>Avanzado</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped"
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 85%"
-              ></div>
-            </div>
-          </li>
-          <li class="list-group-item">
-            <h3>
-              Illustrator
-              <i
-                class="fa-solid fa-bezier-curve"
-                style="font-size: 2rem; color: cornflowerblue"
-              ></i>
-            </h3>
-            <h5>Avanzado</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped"
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="width: 85%"
-              ></div>
-            </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
+<script>
+  import { Icon } from "@iconify/vue";
+  import skillsData from "../services/skills.json";
+
+  export default {
+    components: {
+      Icon,
+    },
+    data() {
+      return {
+        skills: [],
+        columns: [],
+      };
+    },
+    mounted() {
+      this.skills = skillsData;
+      this.columns = this.chunkArray(
+        this.skills,
+        Math.ceil(this.skills.length / 3)
+      );
+    },
+    methods: {
+      chunkArray(array, size) {
+        const chunkedArray = [];
+        for (let i = 0; i < array.length; i += size) {
+          chunkedArray.push(array.slice(i, i + size));
+        }
+        return chunkedArray;
+      },
+    },
+  };
+</script>
+
 <style>
+.skill-item {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 0.3rem;
+}
+  .skill-item:hover {
+    transform: scale(1.5);
+  }
+  
   template {
     background-color: aqua;
   }

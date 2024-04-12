@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Effective communication",
+    "icon": "bi:chat-dots"
+  },
+  {
+    "name": "Customer orientation",
+    "icon": "bx:bxs-user"
+  },
+  {
+    "name": "Problem solving",
+    "icon": "ri:tools-line"
+  },
+  {
+    "name": "Flexibility",
+    "icon": "ic:round-accessibility"
+  },
+  {
+    "name": "Team worker",
+    "icon": "mdi:account-group"
+  }
+]
