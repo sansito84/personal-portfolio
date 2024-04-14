@@ -65,8 +65,7 @@ export default {
 }
 .sskill-item:hover {
   z-index: 99;
-  transform: translateY(-5px) translateX(-10px);
-  
+  transform: translateY(-5px) translateX(-10px);  
 }
 
 .sskill-item h3 {

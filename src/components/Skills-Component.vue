@@ -11,7 +11,7 @@
             @mouseenter="showBackgroundImage(skill)"
             @mouseleave="hideBackgroundImage(skill)"
           >
-            <div class="d-flex justify-content-center" style="z-index: 99;">
+            <div class="d-flex justify-content-center" style="z-index: 99">
               <h3>
                 {{ skill.name }}
                 <icon :icon="skill.icon" style="font-size: 2.5rem"></icon>
@@ -29,8 +29,10 @@
                 aria-valuemax="100"
               ></div>
             </div>
-            <div class="background-image" :style="{ backgroundImage: 'url(' + skill.backgroundImage + ')' }"></div>
-          
+            <div
+              class="background-image"
+              :style="{ backgroundImage: 'url(' + skill.backgroundImage + ')' }"
+            ></div>
           </div>
         </div>
       </div>
@@ -90,6 +92,10 @@
   }
   .skill-item:hover {
     transform: scale(1.5);
+    -webkit-box-shadow: 20px 20px 36px 8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 20px 20px 36px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: 20px 20px 36px 8px rgba(0, 0, 0, 0.75);
+    z-index: 99;
   }
 
   .background-image {
@@ -101,7 +107,7 @@
     background-size: cover;
     background-position: center;
     transition: opacity 0.3s ease;
-    opacity: 0; 
+    opacity: 0;
     z-index: 1;
   }
 
