@@ -32,7 +32,7 @@
                     :alt="obj.caption"
                   />
                 </div>
-                <h3 class="h4 mb-4">Cliente: {{ obj.header }}</h3>
+                <h3 class="h4 mb-4">{{obj.type === 'client' ? 'Client:' : 'Personal'}} {{ obj.header }}</h3>
                 <h6 class="mb-2">{{ obj.caption }}</h6>
                 <h6 class="mb-4 font-monospace">
                   {{ obj.description }}
