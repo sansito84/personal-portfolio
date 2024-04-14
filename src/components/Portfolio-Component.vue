@@ -4,8 +4,10 @@
       <h2 class="text-center text-white my-5 animate__animated">
         Portfolio
       </h2>
+      <div class="row bg-body rounded-4 shadow-lg d-flex">
+
       <swiper
-        class="shadow-lg w-100 bg-light rounded-4"
+        class="w-100 rounded-4"
         :modules="modules"
         :slides-per-view="1"
         :space-between="50"
@@ -43,6 +45,7 @@
         </swiper-slide>
         ...
       </swiper>
+      </div>
     </div>
   </section>
 </template>
