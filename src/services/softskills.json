@@ -18,5 +18,9 @@
   {
     "name": "Team worker",
     "icon": "mdi:account-group"
+  },
+  {
+    "name":"Adaptability",
+    "icon":"game-icons:transform"
   }
 ]

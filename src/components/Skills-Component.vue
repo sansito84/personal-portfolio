@@ -2,8 +2,8 @@
   <section class="page-section bg-primary py-5" id="about">
     <div class="container text-center">
       <h2 class="text-white animate__animated my-5">Skills!</h2>
-      <div class="row bg-body rounded-4 shadow-lg gap-1">
-        <div v-for="(column, index) in columns" :key="index" class="col my-3">
+      <div class="row bg-body rounded-4 shadow-lg d-flex py-3">
+        <div v-for="(column, index) in columns" :key="index" class="col-md-4">
           <div
             v-for="(skill, i) in column"
             :key="i"
