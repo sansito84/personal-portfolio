@@ -11,25 +11,27 @@
             @mouseenter="showBackgroundImage(skill)"
             @mouseleave="hideBackgroundImage(skill)"
           >
-            <div class="d-flex justify-content-center" style="z-index: 99">
-              <h3>
-                {{ skill.name }}
-                <icon :icon="skill.icon" style="font-size: 2.5rem"></icon>
-              </h3>
-            </div>
-
-            <h5>{{ skill.level }}</h5>
-            <div class="progress">
-              <div
-                class="progress-bar progress-bar-striped"
-                role="progressbar"
-                :style="'width: ' + skill.progress + '%;'"
-                :aria-valuenow="skill.progress"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+            <div class="skill-content">
+              <div class="d-flex justify-content-center">
+                <h3>
+                  {{ skill.name }}
+                  <icon :icon="skill.icon" style="font-size: 2.5rem"></icon>
+                </h3>
+              </div>
+              <h5>{{ skill.level }}</h5>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped"
+                  role="progressbar"
+                  :style="'width: ' + skill.progress + '%;'"
+                  :aria-valuenow="skill.progress"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
             <div
+              v-if="skill.showBackground"
               class="background-image"
               :style="{ backgroundImage: 'url(' + skill.backgroundImage + ')' }"
             ></div>
@@ -81,6 +83,7 @@
 
 <style>
   .skill-item {
+    position: relative;
     padding: 15px;
     border-radius: 8px;
     color: black;
@@ -90,12 +93,10 @@
     margin-bottom: 0.3rem;
     overflow: hidden;
   }
-  .skill-item:hover {
-    transform: scale(1.5);
-    -webkit-box-shadow: 20px 20px 36px 8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 20px 20px 36px 8px rgba(0, 0, 0, 0.75);
-    box-shadow: 20px 20px 36px 8px rgba(0, 0, 0, 0.75);
-    z-index: 99;
+
+  .skill-content {
+    position: relative;
+    z-index: 2;
   }
 
   .background-image {
@@ -112,7 +113,13 @@
   }
 
   .skill-item:hover .background-image {
-    opacity: 0.2;
+    opacity: 0.3;
     z-index: 1;
+  }
+
+  .skill-item:hover {
+    transform: scale(1.3);
+    z-index: 99;
+    box-shadow: 10px 5px 35px rgba(0, 0, 0, 0.5);
   }
 </style>

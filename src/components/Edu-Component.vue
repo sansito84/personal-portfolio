@@ -44,7 +44,7 @@ export default {
   margin-bottom: 0.3rem;
 }
 .course-item:hover {
-    transform: translateY(-5px) translateX(10px);
+    transform: translateY(-5px) translateX(-5px);
   }
 
 </style>
