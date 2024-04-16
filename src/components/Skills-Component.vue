@@ -12,13 +12,13 @@
             @mouseleave="hideBackgroundImage(skill)"
           >
             <div class="skill-content">
-              <div class="d-flex justify-content-center">
-                <h3>
+              <div class="d-flex justify-content-center align-content-center">
+                <h3 class="my-0">
                   {{ skill.name }}
                   <icon :icon="skill.icon" style="font-size: 2.5rem"></icon>
                 </h3>
               </div>
-              <h5>{{ skill.level }}</h5>
+              <!-- <h5>{{ skill.level }}</h5>
               <div class="progress">
                 <div
                   class="progress-bar progress-bar-striped"
@@ -28,7 +28,7 @@
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
-              </div>
+              </div> -->
             </div>
             <div
               v-if="skill.showBackground"

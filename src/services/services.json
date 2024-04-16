@@ -15,6 +15,14 @@
     "type":"client"
   },
   {
+    "img": "rus",
+    "caption": "Insurance Marketplace \"RUS Travel Market\"",
+    "header": "Covery",
+    "description": "ReactJS, ExpressJS and mySQL",
+    "href": "http://covery.tech/",
+    "type":"client"
+  },
+  {
     "img": "boca",
     "caption": "Operative Prototype \"Boca Market Insurance\"",
     "header": "Covery",

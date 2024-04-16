@@ -2,120 +2,91 @@
   {
     "name": "HTML",
     "icon": "skill-icons:html",
-    "level": "Advanced",
-    "progress": 90,
     "backgroundImage": "https://as2.ftcdn.net/v2/jpg/03/05/23/35/1000_F_305233591_U7DvegTtiIoP2CWNUpR5qxrFvqpjpYW9.jpg"
   },
   {
     "name": "CSS",
     "icon": "skill-icons:css",
-    "level": "Advanced",
-    "progress": 90,
     "backgroundImage": "https://as1.ftcdn.net/v2/jpg/00/85/96/70/1000_F_85967026_cGUMBcA7OUCyiYzHuUBRr0hllINgvidN.jpg"
   },
   {
     "name": "Javascript",
     "icon": "skill-icons:javascript",
-    "level": "Advanced",
-    "progress": 70,
     "backgroundImage":"https://media.istockphoto.com/id/1386341272/photo/abstract-modern-tech-of-programming-code-screen-developer.jpg?s=612x612&w=0&k=20&c=16FJUoZ6j-XmBDF0g-llzkJaIsdpf6uz46D4eQfL_LM="
   },
   {
     "name": "Bootstrap",
     "icon": "skill-icons:bootstrap",
-    "level": "Advanced",
-    "progress": 90,
     "backgroundImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7kBPAXLJ9Rt_PZIZGAwu6cR9UW_fvFjmmxsodDBk8AA&s"
   },
   {
     "name": "VueJS",
     "icon": "skill-icons:vuejs-light",
-    "level": "Advanced",
-    "progress": 80,
     "backgroundImage":"https://c8.alamy.com/comp/2E3CPB4/vuejs-logo-paper-texture-illustration-2E3CPB4.jpg"
   },
   {
     "name": "ReactJS",
     "icon": "skill-icons:react-light",
-    "level": "Advanced",
-    "progress": 65,
     "backgroundImage":"https://t4.ftcdn.net/jpg/03/69/66/59/360_F_369665909_cEv38PQe3iuHti2PIR9U5k1KYfYIPdWs.jpg"
   },
   {
     "name": "React-native",
     "icon": "skill-icons:react-light",
-    "level": "Advanced",
-    "progress": 90,
     "backgroundImage":"https://t4.ftcdn.net/jpg/02/00/20/89/360_F_200208909_tvpqUno6arZycC8jWtduKEITDcqszvwj.jpg"
+  },
+  {
+    "name":"ExpressJS",
+    "icon":"skill-icons:expressjs-light",
+    "backgroundImage":"https://media.istockphoto.com/id/1386341272/photo/abstract-modern-tech-of-programming-code-screen-developer.jpg?s=612x612&w=0&k=20&c=16FJUoZ6j-XmBDF0g-llzkJaIsdpf6uz46D4eQfL_LM="
   },
   {
     "name": "Python",
     "icon": "skill-icons:python-light",
-    "level": "Intermediate",
-    "progress": 55,
     "backgroundImage":"https://t3.ftcdn.net/jpg/01/16/75/94/360_F_116759427_l4AGnmouXXUnW4YGKHJrmYHoMrBpjh0L.jpg"
-  },
-  {
-    "name": "Git",
-    "icon": "skill-icons:git",
-    "level": "Advanced",
-    "progress": 90,
-    "backgroundImage":"https://www.shutterstock.com/image-photo/software-development-branching-strategy-process-260nw-2258451001.jpg"
   },
   {
     "name": "MySQL",
     "icon": "skill-icons:mysql-light",
-    "level": "Advanced",
-    "progress": 85,
     "backgroundImage":"https://t3.ftcdn.net/jpg/03/06/93/82/360_F_306938279_ezPVDtcNE0Q2Z1JOFPfYowmvFbzp1T4W.jpg"
+  },
+  {
+    "name": "Git",
+    "icon": "skill-icons:git",
+    "backgroundImage":"https://www.shutterstock.com/image-photo/software-development-branching-strategy-process-260nw-2258451001.jpg"
+  },
+  {
+    "name": "Linux",
+    "icon": "skill-icons:linux-light",
+    "backgroundImage":"https://media.istockphoto.com/id/619051530/photo/server-configuration-command-lines-on-a-monitor.jpg?s=612x612&w=0&k=20&c=j_ZbmIM1CgHs-Cv9mAYiCcKB8bcfa1rO4ZIWgsuQ1bM="
   },
   {
     "name": "Figma",
     "icon": "skill-icons:figma-light",
-    "level": "Advanced",
-    "progress": 76,
     "backgroundImage":"https://europe1.discourse-cdn.com/figma/original/3X/3/5/35c4c441d2c4223b83b2e083bf32d418651e4c4c.jpeg"
   },
   {
     "name": "PM2",
     "icon": "logos:pm2-icon",
-    "level": "Advanced",
-    "progress": 85,
     "backgroundImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdZeFAfvMOutWKD6B4-B1UptWNmZ2jZMelbAMARiuidA&s "
   },
   {
     "name": "Nginx",
     "icon": "skill-icons:nginx",
-    "level": "Advanced",
-    "progress": 76,
     "backgroundImage":"https://assets.techrepublic.com/uploads/2020/09/network-switch-cover-a-stockphoto-copy.jpg"
-  },
-  {
-    "name": "Linux",
-    "icon": "skill-icons:linux-light",
-    "level": "Advanced",
-    "progress": 85,
-    "backgroundImage":"https://media.istockphoto.com/id/619051530/photo/server-configuration-command-lines-on-a-monitor.jpg?s=612x612&w=0&k=20&c=j_ZbmIM1CgHs-Cv9mAYiCcKB8bcfa1rO4ZIWgsuQ1bM="
   },
   {
     "name": "Docker",
     "icon": "skill-icons:docker",
-    "level": "Intermediate",
-    "progress": 40,
     "backgroundImage":"https://cdn.analyticsvidhya.com/wp-content/uploads/2023/12/Docker-containers-1.png"
   },
   {
     "name": "Kubernetes",
     "icon": "skill-icons:kubernetes",
-    "level": "Intermediate",
-    "progress": 34,
     "backgroundImage":"https://i0.wp.com/webb.ai/wp-content/uploads/2024/02/AdobeStock_548879473.jpeg?fit=6183%2C2426&ssl=1"
   },
   {
     "name": "Github actions",
     "icon": "skill-icons:githubactions-light",
-    "level": "Intermediate",
-    "progress": 25,
     "backgroundImage":"https://blogs.perficient.com/files/Colorful-Computer-Code-600x400.jpg"
   }
 ]

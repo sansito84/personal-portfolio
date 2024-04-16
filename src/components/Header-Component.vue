@@ -49,7 +49,7 @@
                     </p>
 
                     <a
-                        class="btn btn-primary btn-xl shadow-lg bg-body text-black"
+                        class="btn btn-primary btn-lg"
                         href="#about"
                         >Conoceme más!</a
                     >
