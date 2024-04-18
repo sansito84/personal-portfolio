@@ -1,24 +1,20 @@
 <template>
   <section class="page-section bg-primary py-5" id="services">
     <div class="container text-center">
-      <h2 class="text-center text-white my-5 animate__animated">
-        Portfolio
-      </h2>
+      <h2 class="text-center text-white my-5 animate__animated">Portfolio</h2>
       <div class="row bg-body rounded-4 shadow-lg d-flex">
-
-      <swiper
-        class="w-100 rounded-4"
-        :modules="modules"
-        :slides-per-view="1"
-        :space-between="50"
-        navigation
-        :pagination="{ clickable: true }"
-        @swiper="onSwiper"
-        @slideChange="onSlideChange"
-        :zoom="true"
-      >
-        <swiper-slide v-for="(obj, key) in servicesJSON" :key="key">
-          
+        <swiper
+          class="w-100 rounded-4"
+          :modules="modules"
+          :slides-per-view="1"
+          :space-between="50"
+          navigation
+          :pagination="{ clickable: true }"
+          @swiper="onSwiper"
+          @slideChange="onSlideChange"
+          :zoom="true"
+        >
+          <swiper-slide v-for="(obj, key) in servicesJSON" :key="key">
             <a
               class="btn btn-secondary mt-3 mb-5 rounded-3"
               v-bind:href="obj.href"
@@ -34,17 +30,19 @@
                     :alt="obj.caption"
                   />
                 </div>
-                <h3 class="h4 mb-4">{{obj.type === 'client' ? 'Client:' : 'Personal'}} {{ obj.header }}</h3>
+                <h3 class="h4 mb-4">
+                  {{ obj.type === "client" ? "Client:" : "Personal" }}
+                  {{ obj.header }}
+                </h3>
                 <h6 class="mb-2">{{ obj.caption }}</h6>
                 <h6 class="mb-4 font-monospace">
                   {{ obj.description }}
                 </h6>
               </div>
             </a>
-          
-        </swiper-slide>
-        ...
-      </swiper>
+          </swiper-slide>
+          ...
+        </swiper>
       </div>
     </div>
   </section>
@@ -63,7 +61,7 @@
 
   export default {
     data: () => ({
-      servicesJSON: services
+      servicesJSON: services,
     }),
     components: {
       Swiper,
@@ -86,15 +84,17 @@
 </script>
 
 <style type="text/css">
-@media  (max-width: 660px;) {
   .services-img:hover {
-    transform: scale(2);
-    z-index: 99;
-    box-shadow: 10px 5px 35px rgba(0, 0, 0, 0.5);
-  }
-}.services-img:hover {
     transform: scale(1.3) translateY(20px);
     z-index: 99;
     box-shadow: 10px 5px 35px rgba(0, 0, 0, 0.5);
+  }
+
+  @media screen and (max-width: 660px) {
+    .services-img:hover {
+      transform: scale(2);
+      z-index: 99;
+      box-shadow: 10px 5px 35px rgba(0, 0, 0, 0.5);
+    }
   }
 </style>
