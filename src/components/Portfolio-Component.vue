@@ -85,4 +85,16 @@
   };
 </script>
 
-<style type="text/css"></style>
+<style type="text/css">
+@media  (max-width: 660px;) {
+  .services-img:hover {
+    transform: scale(2);
+    z-index: 99;
+    box-shadow: 10px 5px 35px rgba(0, 0, 0, 0.5);
+  }
+}.services-img:hover {
+    transform: scale(1.3) translateY(20px);
+    z-index: 99;
+    box-shadow: 10px 5px 35px rgba(0, 0, 0, 0.5);
+  }
+</style>
