@@ -1,5 +1,12 @@
 [
   {
+    "img": "yendo",
+    "caption": "yendo.ar",
+    "header": "Yendo page",
+    "description": "MERN, CRUD, RESTful API and Bootstrap",
+    "type": "client"
+  },
+  {
     "img": "clima",
     "caption": "Own Weather App",
     "header": "Weather App",
@@ -12,15 +19,15 @@
     "caption": "Roller Hockey Scoreboard",
     "header": "Freelance",
     "description": "react-native",
-    "type":"client"
+    "type": "client"
   },
   {
     "img": "rus",
     "caption": "Insurance Marketplace \"RUS Travel Market\"",
     "header": "Covery",
-    "description": "ReactJS, ExpressJS and mySQL",
+    "description": "MERN, CRUD, RESTful API and Tachyons",
     "href": "http://covery.tech/",
-    "type":"client"
+    "type": "client"
   },
   {
     "img": "boca",
@@ -28,7 +35,7 @@
     "header": "Covery",
     "description": "HTML, CSS",
     "href": "http://covery.tech/",
-    "type":"client"
+    "type": "client"
   },
   {
     "img": "boston",
@@ -36,7 +43,7 @@
     "header": "Covery",
     "description": "HTML, CSS",
     "href": "http://covery.tech/",
-    "type":"client"
+    "type": "client"
   },
   {
     "img": "libra",
@@ -44,7 +51,7 @@
     "header": "Covery",
     "description": "VUE, Bootstrap",
     "href": "http://libra.emititupoliza.com.ar/admin/",
-    "type":"client"
+    "type": "client"
   },
   {
     "img": "aeropuertos",
@@ -52,7 +59,7 @@
     "header": "Covery",
     "description": "HTML, Bootstrap",
     "href": "http://covery.tech/",
-    "type":"client"
+    "type": "client"
   },
   {
     "img": "website-covery",
@@ -60,6 +67,6 @@
     "header": "Covery",
     "description": "HTML, Bootstrap",
     "href": "http://covery.tech/",
-    "type":"client"
+    "type": "client"
   }
 ]
