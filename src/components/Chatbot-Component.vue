@@ -263,7 +263,7 @@
     position: absolute;
     left: -10px;
     top: 10px;
-    border-width: 10px;
+    border-width: 12px;
     border-style: solid;
     border-color: transparent #007bff transparent transparent; /* Color del globo */
 }
