@@ -17,6 +17,8 @@
         <Email></Email>
         <!-- Footer-->
         <Footer></Footer>
+        <!-- Chatbot -->
+         <Chatbot></Chatbot>
     </div>
 </template>
 
@@ -30,6 +32,7 @@
     import Contact from "./components/Contact-Component.vue";
     import Footer from "./components/Footer-Component.vue";
     import Email from "./components/Email-Component.vue";
+    import Chatbot from "./components/Chatbot-Component.vue";
 
     export default {
         components: {
@@ -42,6 +45,7 @@
             Footer,
             Email,
             Portfolio,
+            Chatbot
 
         },
         name: "App",

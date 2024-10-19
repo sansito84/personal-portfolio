@@ -16,7 +16,8 @@ const i18n = createI18n({
     // something vue-i18n options here ...
 })
 
-app.use(Icon)
+// eslint-disable-next-line vue/multi-word-component-names
+app.component('Icon', Icon)
 
 app.use(Toast, {
     transition: "Vue-Toastification__bounce",
