@@ -15,6 +15,14 @@
     "type": ""
   },
   {
+    "img": "textToSpeech",
+    "caption": "Text to Speech",
+    "header": "Freelance",
+    "description": "Python",
+    "href":"https://talk-to-me-aodo.onrender.com/",
+    "type": ""
+  },
+  {
     "img": "scoreboard",
     "caption": "Roller Hockey Scoreboard",
     "header": "Freelance",

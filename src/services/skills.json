@@ -13,6 +13,11 @@
     "name": "Javascript",
     "icon": "skill-icons:javascript",
     "backgroundImage":"https://media.istockphoto.com/id/1386341272/photo/abstract-modern-tech-of-programming-code-screen-developer.jpg?s=612x612&w=0&k=20&c=16FJUoZ6j-XmBDF0g-llzkJaIsdpf6uz46D4eQfL_LM="
+  },  
+  {
+    "name": "Typescript",
+    "icon": "skill-icons:typescript",
+    "backgroundImage":"https://media.istockphoto.com/id/1386341272/photo/abstract-modern-tech-of-programming-code-screen-developer.jpg?s=612x612&w=0&k=20&c=16FJUoZ6j-XmBDF0g-llzkJaIsdpf6uz46D4eQfL_LM="
   },
   {
     "name": "Bootstrap",
@@ -60,6 +65,11 @@
     "backgroundImage":"https://media.istockphoto.com/id/619051530/photo/server-configuration-command-lines-on-a-monitor.jpg?s=612x612&w=0&k=20&c=j_ZbmIM1CgHs-Cv9mAYiCcKB8bcfa1rO4ZIWgsuQ1bM="
   },
   {
+    "name": "Ubuntu",
+    "icon": "skill-icons:ubuntu-light",
+    "backgroundImage":"https://media.istockphoto.com/id/1386341272/photo/abstract-modern-tech-of-programming-code-screen-developer.jpg?s=612x612&w=0&k=20&c=16FJUoZ6j-XmBDF0g-llzkJaIsdpf6uz46D4eQfL_LM="
+  },
+  {
     "name": "Figma",
     "icon": "skill-icons:figma-light",
     "backgroundImage":"https://europe1.discourse-cdn.com/figma/original/3X/3/5/35c4c441d2c4223b83b2e083bf32d418651e4c4c.jpeg"
@@ -87,6 +97,11 @@
   {
     "name": "Github actions",
     "icon": "skill-icons:githubactions-light",
+    "backgroundImage":"https://blogs.perficient.com/files/Colorful-Computer-Code-600x400.jpg"
+  },
+  {
+    "name": "CAD/CAM",
+    "icon": "skill-icons:ai",
     "backgroundImage":"https://blogs.perficient.com/files/Colorful-Computer-Code-600x400.jpg"
   }
 ]
