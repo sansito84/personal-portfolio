@@ -20,6 +20,16 @@
     "backgroundImage":"https://media.istockphoto.com/id/1386341272/photo/abstract-modern-tech-of-programming-code-screen-developer.jpg?s=612x612&w=0&k=20&c=16FJUoZ6j-XmBDF0g-llzkJaIsdpf6uz46D4eQfL_LM="
   },
   {
+    "name": "Python",
+    "icon": "skill-icons:python-light",
+    "backgroundImage":"https://t3.ftcdn.net/jpg/01/16/75/94/360_F_116759427_l4AGnmouXXUnW4YGKHJrmYHoMrBpjh0L.jpg"
+  },
+  {
+    "name": "PHP",
+    "icon": "skill-icons:php-light",
+    "backgroundImage":"https://blogs.perficient.com/files/Colorful-Computer-Code-600x400.jpg"
+  },
+  {
     "name": "Bootstrap",
     "icon": "skill-icons:bootstrap",
     "backgroundImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7kBPAXLJ9Rt_PZIZGAwu6cR9UW_fvFjmmxsodDBk8AA&s"
@@ -43,11 +53,6 @@
     "name":"ExpressJS",
     "icon":"skill-icons:expressjs-light",
     "backgroundImage":"https://media.istockphoto.com/id/1386341272/photo/abstract-modern-tech-of-programming-code-screen-developer.jpg?s=612x612&w=0&k=20&c=16FJUoZ6j-XmBDF0g-llzkJaIsdpf6uz46D4eQfL_LM="
-  },
-  {
-    "name": "Python",
-    "icon": "skill-icons:python-light",
-    "backgroundImage":"https://t3.ftcdn.net/jpg/01/16/75/94/360_F_116759427_l4AGnmouXXUnW4YGKHJrmYHoMrBpjh0L.jpg"
   },
   {
     "name": "MySQL",
@@ -97,11 +102,6 @@
   {
     "name": "Github actions",
     "icon": "skill-icons:githubactions-light",
-    "backgroundImage":"https://blogs.perficient.com/files/Colorful-Computer-Code-600x400.jpg"
-  },
-  {
-    "name": "CAD/CAM",
-    "icon": "skill-icons:ai",
     "backgroundImage":"https://blogs.perficient.com/files/Colorful-Computer-Code-600x400.jpg"
   }
 ]

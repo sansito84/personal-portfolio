@@ -1,80 +1,88 @@
 [
-  {
-    "img": "yendo",
-    "caption": "yendo.ar",
-    "header": "Yendo page",
-    "description": "MERN, CRUD, RESTful API and Bootstrap",
-    "type": "client"
-  },
-  {
-    "img": "clima",
-    "caption": "Own Weather App",
-    "header": "Weather App",
-    "description": "HTML, CSS, JS and Bootstrap",
-    "href": "https://gleaming-crisp-e93335.netlify.app/",
-    "type": ""
-  },
-  {
-    "img": "textToSpeech",
-    "caption": "Text to Speech",
-    "header": "Freelance",
-    "description": "Python",
-    "href":"https://talk-to-me-aodo.onrender.com/",
-    "type": ""
-  },
-  {
-    "img": "scoreboard",
-    "caption": "Roller Hockey Scoreboard",
-    "header": "Freelance",
-    "description": "react-native",
-    "type": "client"
-  },
-  {
-    "img": "rus",
-    "caption": "Insurance Marketplace \"RUS Travel Market\"",
-    "header": "Covery",
-    "description": "MERN, CRUD, RESTful API and Tachyons",
-    "href": "http://covery.tech/",
-    "type": "client"
-  },
-  {
-    "img": "boca",
-    "caption": "Operative Prototype \"Boca Market Insurance\"",
-    "header": "Covery",
-    "description": "HTML, CSS",
-    "href": "http://covery.tech/",
-    "type": "client"
-  },
-  {
-    "img": "boston",
-    "caption": "Operative Prototype \"Boston Market Insurance\"",
-    "header": "Covery",
-    "description": "HTML, CSS",
-    "href": "http://covery.tech/",
-    "type": "client"
-  },
-  {
-    "img": "libra",
-    "caption": "Operative Prototype \"Libra Market Insurance\"",
-    "header": "Covery",
-    "description": "VUE, Bootstrap",
-    "href": "http://libra.emititupoliza.com.ar/admin/",
-    "type": "client"
-  },
-  {
-    "img": "aeropuertos",
-    "caption": "Operative Prototype \"Argentina Airports Market Insurance\"",
-    "header": "Covery",
-    "description": "HTML, Bootstrap",
-    "href": "http://covery.tech/",
-    "type": "client"
-  },
-  {
-    "img": "website-covery",
-    "caption": "Corporate Website",
-    "header": "Covery",
-    "description": "HTML, Bootstrap",
-    "href": "http://covery.tech/",
-    "type": "client"
-  }
+    {
+        "img": "riodelospajaros",
+        "caption": "riodelospajaros.com.ar",
+        "header": "Landing RDLP Brokers",
+        "description": "ReactJS, Typescript and Tailwind",
+        "href":"https://riodelospajaros.com.ar",
+        "type": "client"
+    },
+    {
+        "img": "yendo",
+        "caption": "yendo.ar",
+        "header": "Yendo page",
+        "description": "MERN, CRUD, RESTful API and Bootstrap",
+        "type": "client"
+    },
+    {
+        "img": "clima",
+        "caption": "Own Weather App",
+        "header": "Weather App",
+        "description": "HTML, CSS, JS and Bootstrap",
+        "href": "https://gleaming-crisp-e93335.netlify.app/",
+        "type": ""
+    },
+    {
+        "img": "textToSpeech",
+        "caption": "Text to Speech",
+        "header": "Freelance",
+        "description": "Python",
+        "href": "https://talk-to-me-aodo.onrender.com/",
+        "type": ""
+    },
+    {
+        "img": "scoreboard",
+        "caption": "Roller Hockey Scoreboard",
+        "header": "Freelance",
+        "description": "react-native",
+        "type": "client"
+    },
+    {
+        "img": "rus",
+        "caption": "Insurance Marketplace \"RUS Travel Market\"",
+        "header": "Covery",
+        "description": "MERN, CRUD, RESTful API and Tachyons",
+        "href": "http://covery.tech/",
+        "type": "client"
+    },
+    {
+        "img": "boca",
+        "caption": "Operative Prototype \"Boca Market Insurance\"",
+        "header": "Covery",
+        "description": "HTML, CSS",
+        "href": "http://covery.tech/",
+        "type": "client"
+    },
+    {
+        "img": "boston",
+        "caption": "Operative Prototype \"Boston Market Insurance\"",
+        "header": "Covery",
+        "description": "HTML, CSS",
+        "href": "http://covery.tech/",
+        "type": "client"
+    },
+    {
+        "img": "libra",
+        "caption": "Operative Prototype \"Libra Market Insurance\"",
+        "header": "Covery",
+        "description": "VUE, Bootstrap",
+        "href": "http://libra.emititupoliza.com.ar/admin/",
+        "type": "client"
+    },
+    {
+        "img": "aeropuertos",
+        "caption": "Operative Prototype \"Argentina Airports Market Insurance\"",
+        "header": "Covery",
+        "description": "HTML, Bootstrap",
+        "href": "http://covery.tech/",
+        "type": "client"
+    },
+    {
+        "img": "website-covery",
+        "caption": "Corporate Website",
+        "header": "Covery",
+        "description": "HTML, Bootstrap",
+        "href": "http://covery.tech/",
+        "type": "client"
+    }
 ]

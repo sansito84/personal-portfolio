@@ -26,32 +26,18 @@
                     style="color: white"
                 />
                 <h3>AmikBot</h3>
-                <a @click="toggleChat"
-                    ><Icon
+                <a @click="toggleChat">
+                    <Icon
                         icon="mdi:close-outline"
                         width="24"
                         height="24"
                         style="color: red"
-                /></a>
+                    />
+                </a>
             </div>
 
             <div class="chatbot-body">
                 <!-- Mensajes del chat -->
-                <!-- <div
-                    v-for="(msg, index) in messages"
-                    :key="index"
-                    :class="msg.sender"
-                >
-                    <b-card
-                        :class="{
-                            'text-right': msg.sender === 'user',
-                            'text-left': msg.sender === 'bot',
-                        }"
-                        class="mb-2"
-                    >
-                        <div v-html="formatResponse(msg.text)"></div>
-                    </b-card>
-                </div> -->
                 <div
                     v-for="(msg, index) in messages"
                     :key="index"
@@ -98,6 +84,16 @@
         methods: {
             toggleChat() {
                 this.isChatOpen = !this.isChatOpen;
+                if (this.isChatOpen) {
+                    this.sendWelcomeMessage(); // Envía el mensaje de bienvenida al abrir el chat
+                }
+            },
+            sendWelcomeMessage() {
+                const welcomeMessage = {
+                    text: "¡Hola! Soy AmikBot el asistente virtual de Santiago. Realizado Python y Gemini de Google. Debido a que no utilizo un servicio de pago para para la API de mensajería, puede que haya demoras en mis respuestas. Te pido que esperes unos minutos hasta que se active y te envíe la respuesta. ¡Estoy aquí para ayudarte!",
+                    sender: "bot",
+                };
+                this.messages.push(welcomeMessage); // Agrega el mensaje de bienvenida a los mensajes
             },
             sendMessage() {
                 if (this.userInput.trim() === "") return;
@@ -117,24 +113,54 @@
                 this.fetchResponse(userInputCopy);
             },
             async fetchResponse(userMessage) {
-                try {
-                    const response = await axios.post(
-                        process.env.VUE_APP_API_CHATBOT,
-                        {
-                            question: userMessage,
+                const timeout = 30000; // 30 segundos
+                let retry = true;
+
+                // Crear una promesa que se resolverá después del tiempo de espera
+                const timeoutPromise = new Promise((resolve) => {
+                    setTimeout(() => {
+                        if (retry) {
+                            resolve("timeout");
                         }
-                    );
-                    console.log("esperando respuesta");
-                    // Agregar la respuesta del bot al chat
-                    const botMessage = {
-                        text: response.data.response,
-                        sender: "bot",
-                    };
-                    this.messages.push(botMessage);
-                } catch (error) {
-                    console.error("Error al comunicarse con la API:", error);
-                }
+                    }, timeout);
+                });
+
+                // Hacer el llamado a la API
+                const apiCall = async () => {
+                    try {
+                        const response = await axios.post(
+                            process.env.VUE_APP_API_CHATBOT,
+                            { question: userMessage }
+                        );
+                        // Agregar la respuesta del bot al chat
+                        const botMessage = {
+                            text: response.data.response,
+                            sender: "bot",
+                        };
+                        this.messages.push(botMessage);
+                        retry = false; // No reintentar si se recibe la respuesta
+                    } catch (error) {
+                        console.error(
+                            "Error al comunicarse con la API:",
+                            error
+                        );
+                    }
+                };
+
+                // Ejecutar ambas promesas
+                await Promise.race([apiCall(), timeoutPromise]).then(
+                    (result) => {
+                        if (result === "timeout") {
+                            console.log(
+                                "La respuesta tardó más de 30 segundos. Se reintentará..."
+                            );
+                            // Volver a llamar a la API
+                            this.fetchResponse(userMessage);
+                        }
+                    }
+                );
             },
+
             formatResponse(text) {
                 // Reemplazar asteriscos por etiquetas HTML para negrita y cursiva
                 return text
@@ -168,12 +194,14 @@
         position: fixed;
         bottom: 90px; /* Ajuste para que aparezca sobre el botón flotante */
         right: 20px;
-        width: 300px;
+        width: 90%; /* Cambiado a 90% para adaptarse a pantallas pequeñas */
+        max-width: 300px; /* Ancho máximo para pantallas grandes */
         background-color: white;
         border: 1px solid #ccc;
         border-radius: 10px;
         z-index: 1001; /* Debe tener un z-index mayor que el botón */
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* Evita que el contenido sobresalga */
     }
 
     /* Estilos para el header del chatbot */
@@ -195,78 +223,62 @@
         padding: 10px;
     }
 
-    /* Estilos para los mensajes */
-    .user {
-        text-align: right;
-    }
-
-    .bot {
-        text-align: left;
-    }
-
-    /* Estilos para el input */
-    .chatbot-input {
-        padding: 10px;
-        border-top: 1px solid #ccc;
-    }
     /* Estilos generales para los mensajes */
-/* Estilos generales para los mensajes */
-.message {
-    margin-bottom: 10px;
-    display: flex;
-}
+    .message {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-end; /* Alinea los mensajes en la parte inferior */
+    }
 
-/* Estilos para el globo de chat del usuario */
-.message.user {
-    justify-content: flex-end; /* Alinea a la derecha */
-}
+    /* Estilos para el globo de chat del usuario */
+    .message.user {
+        justify-content: flex-end; /* Alinea a la derecha */
+    }
 
-/* Estilos para el globo de chat del bot */
-.message.bot {
-    justify-content: flex-start; /* Alinea a la izquierda */
-}
+    /* Estilos para el globo de chat del bot */
+    .message.bot {
+        justify-content: flex-start; /* Alinea a la izquierda */
+    }
 
-/* Estilos para el globo de chat */
-.message-bubble {
-    position: relative;
-    max-width: 70%;
-    padding: 10px 15px;
-    color: white;
-    background-color: #007bff; /* Color del globo */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
+    /* Estilos para el globo de chat */
+    .message-bubble {
+        position: relative;
+        max-width: 70%;
+        padding: 10px 15px;
+        color: white;
+        background-color: #007bff; /* Color del globo */
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
 
-/* Redondeo solo en un lado del globo del usuario */
-.message.user .message-bubble {
-    border-radius: 20px 20px 0 20px; /* Arriba, derecha, abajo, izquierda */
-}
+    /* Redondeo solo en un lado del globo del usuario */
+    .message.user .message-bubble {
+        border-radius: 20px 20px 0 20px; /* Arriba, derecha, abajo, izquierda */
+    }
 
-/* Redondeo solo en un lado del globo del bot */
-.message.bot .message-bubble {
-    border-radius: 20px 20px 20px 0; /* Arriba, derecha, abajo, izquierda */
-}
+    /* Redondeo solo en un lado del globo del bot */
+    .message.bot .message-bubble {
+        border-radius: 20px 20px 20px 0; /* Arriba, derecha, abajo, izquierda */
+    }
 
-/* Pico del globo del usuario */
-.message.user .message-bubble::after {
-    content: '';
-    position: absolute;
-    right: -10px;
-    top: 10px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent transparent transparent #007bff; /* Color del globo */
-}
+    /* Pico del globo del usuario */
+    .message.user .message-bubble::after {
+        content: "";
+        position: absolute;
+        right: -10px;
+        top: 10px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent transparent #007bff; /* Color del globo */
+    }
 
-/* Pico del globo del bot */
-.message.bot .message-bubble::after {
-    content: '';
-    position: absolute;
-    left: -10px;
-    top: 10px;
-    border-width: 12px;
-    border-style: solid;
-    border-color: transparent #007bff transparent transparent; /* Color del globo */
-}
-
-
+    /* Pico del globo del bot */
+    .message.bot .message-bubble::after {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 10px;
+        border-width: 12px;
+        border-style: solid;
+        border-color: transparent #007bff transparent transparent; /* Color del globo */
+    }
 </style>

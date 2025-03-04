@@ -13,7 +13,7 @@
                         <div>santiagosito@gmail.com</div>
                     </div>
                     <div class="col-lg-3 text-center mb-5 mb-lg-0">
-                        <a class="bi bi-linkedin fs-2 mb-3 text-muted" href="https://www.linkedin.com/in/santiagosito48ab8444/" target="_blank" title="Perfil de LinkedIn"></a>
+                        <a class="bi bi-linkedin fs-2 mb-3 text-muted" href="https://www.linkedin.com/in/santiagosito/" target="_blank" title="Perfil de LinkedIn"></a>
                         <div>Santiago Sito</div>
                     </div>
                     <div class="col-lg-3 text-center mb-5 mb-lg-0">
