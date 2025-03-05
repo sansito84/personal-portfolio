@@ -4,12 +4,10 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8 col-xl-6 text-center text-light">
                 <h2 class="mt-0">
-                    Send me a message and I will reply shortly / Enviame un
-                    mensaje y lo responderé a la brevedad
+                    {{ $t('mail_text') }}
                 </h2>
                 <h4 class="mt-0">
-                    Write me and we can arrange a meeting / Escribeme y podremos
-                    coordinar una reunión.
+                    {{ $t('mail_secondary') }}
                 </h4>
             </div>
         </div>
