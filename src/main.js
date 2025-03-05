@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import BootstrapVue3 from 'bootstrap-vue-3'
-import { createI18n } from 'vue-i18n'
+import i18n from './i18n';
 import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
 import 'bootstrap/dist/css/bootstrap.css'
@@ -11,10 +11,6 @@ import { Icon } from '@iconify/vue';
 
 
 const app = createApp(App)
-const i18n = createI18n({
-    locale: 'es',
-    // something vue-i18n options here ...
-})
 
 // eslint-disable-next-line vue/multi-word-component-names
 app.component('Icon', Icon)

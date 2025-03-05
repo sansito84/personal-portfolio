@@ -1,7 +1,7 @@
 <template>
   <section class="page-section bg-primary py-5" id="courses">
     <div class="container text-center">
-      <h2 class="text-white animate__animated my-5">Education</h2>
+      <h2 class="text-white animate__animated my-5">{{ $t('education') }}</h2>
       <div class="row bg-body rounded-4 shadow-lg d-flex py-3">
         <div v-for="(course, index) in courses" :key="index" class="col-md-4">
           <div class="course-item">

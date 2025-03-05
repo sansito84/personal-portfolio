@@ -18,24 +18,10 @@
                     <hr class="divider text-white" />
                 </div>
                 <div class="col-lg-8 align-self-baseline text-white">
-                    <p class="mb-2">My name is - Mi nombre es</p>
+                    <p class="mb-2">{{ $t('nameis') }}</p>
                     <h2 class="animate__animated">Santiago Sito</h2>
                     <p class="mb-2">
-                        Experienced front-end and back-end developer proficient
-                        in deployment technologies like PM2, Nginx, and Linux.
-                        Knowledgeable in Docker, Kubernetes, and CI/CD using
-                        GitHub Actions and Python. Strong problem-solving
-                        abilities and proven IT team leadership. Effective team
-                        player.
-                    </p>
-                    <hr class="divider" />
-                    <p class="mb-2">
-                        Desarrollador con experiencia en front-end y back-end,
-                        hábil en implementaciones eficientes con PM2, Nginx y
-                        Linux. Con conocimientos en Docker, Kubernetes y CI/CD
-                        mediante GitHub Actions y Python. Fuerte en resolución
-                        de problemas, liderazgo de equipos de IT y colaboración
-                        efectiva en equipo.
+                        {{ $t('about') }}
                     </p>
                     <hr class="divider" />
                     <p class="mb-5">
